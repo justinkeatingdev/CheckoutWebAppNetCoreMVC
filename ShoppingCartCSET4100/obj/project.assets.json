@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCartCSET4100.csproj",
-      "projectName": "ShoppingCartCSET4100",
-      "projectPath": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCartCSET4100.csproj",
+      "projectUniqueName": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCart.csproj",
+      "projectName": "ShoppingCart",
+      "projectPath": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCart.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
       "outputPath": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\obj\\",
       "projectStyle": "PackageReference",

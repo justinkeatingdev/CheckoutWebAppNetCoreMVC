@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HEHX6NPyWNsYIFRye0mv299olhUbPB/w3QUxxXOspslPjTlefBPZekHDnvtkIXtfilwzBxvbHSppR6kqEO/owQ==",
+  "dgSpecHash": "JB4SdDEStCS5H3xR9h3xInGwOFvXjnfps0aW43audC1qpHHQ/77kwavRKUAjH1Gk19cc060BihU2cDy9m2h8ww==",
   "success": true,
-  "projectFilePath": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCartCSET4100.csproj",
+  "projectFilePath": "D:\\CODING\\MyChecoutWepAppNetCoreMVC\\CheckoutWebAppNetCoreMVC\\ShoppingCartCSET4100\\ShoppingCart.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
