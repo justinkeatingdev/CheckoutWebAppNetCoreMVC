@@ -1,0 +1,66 @@
+﻿@model Customer
+@{
+   
+    var giftCardItems = Item.GetGiftCardItems().AsEnumerable();
+    MultiSelectList giftCardItemList = new MultiSelectList(giftCardItems, "ItemName", "ItemNameAndCost");
+
+    var toyItems = Item.GetToyItems().AsEnumerable();
+    MultiSelectList toyItemsList = new MultiSelectList(toyItems, "ItemName", "ItemNameAndCost");
+
+    var cellItems = Item.GetCellItems().AsEnumerable();
+    MultiSelectList cellItemsList = new MultiSelectList(cellItems, "ItemName", "ItemNameAndCost");
+
+    var softwareItems = Item.GetSoftwareItems().AsEnumerable();
+    MultiSelectList softwareItemList = new MultiSelectList(softwareItems, "ItemName", "ItemNameAndCost");
+
+    var outdoorItems = Item.GetOutdoorItems().AsEnumerable();
+    MultiSelectList outdoorItemList = new MultiSelectList(outdoorItems, "ItemName", "ItemNameAndCost");
+
+
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to my store</h1>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div>
+            @Html.LabelFor(model => model.CustomerFirstName , "Enter First Name")
+            @Html.TextBoxFor(model => model.CustomerFirstName)
+            <br>
+            <br>
+
+            @Html.LabelFor(model => model.CustomerLastName, "Enter Last Name")
+            @Html.TextBoxFor(model => model.CustomerLastName)
+            <br>
+            <br>
+
+            @Html.LabelFor(model => model.CustomerAddress, "Enter Address")
+            @Html.TextBoxFor(model => model.CustomerAddress)
+            <br>
+            <br>
+
+            @Html.LabelFor(model => model.CustomerItems, "Gift Cards")
+            @Html.ListBoxFor(model => model.CustomerItemNames, giftCardItemList, new { style = "width:250px" })
+            <br>
+            <br />
+           @Html.LabelFor(model => model.CustomerItems, "Toys and Games")
+            @Html.ListBoxFor(model => model.CustomerItemNames, toyItemsList, new { style = "width:250px" })
+            <br>
+            <br>
+            @Html.LabelFor(model => model.CustomerItems, "Cellphones and accesories")
+            @Html.ListBoxFor(model => model.CustomerItemNames, cellItemsList, new { style = "width:250px" })
+            <br>
+            <br>
+            @Html.LabelFor(model => model.CustomerItems, "Software")
+            @Html.ListBoxFor(model => model.CustomerItemNames, softwareItemList, new { style = "width:250px" })
+            <br>
+            <br>
+            @Html.LabelFor(model => model.CustomerItems, "Patio, Lawn, Garden")
+            @Html.ListBoxFor(model => model.CustomerItemNames, outdoorItemList, new { style = "width:250px" })
+            <br>
+            <br> 
+            <input type="submit" id="submitId" value="submit" />
+        </div>
+    }
+</div>

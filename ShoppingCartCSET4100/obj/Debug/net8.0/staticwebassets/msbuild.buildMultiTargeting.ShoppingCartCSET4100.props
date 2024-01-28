@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShoppingCartCSET4100.props" />
+</Project>

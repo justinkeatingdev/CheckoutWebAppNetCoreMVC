@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ShoppingCartCSET4100/1.0.0": {
+        "runtime": {
+          "ShoppingCartCSET4100.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShoppingCartCSET4100/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

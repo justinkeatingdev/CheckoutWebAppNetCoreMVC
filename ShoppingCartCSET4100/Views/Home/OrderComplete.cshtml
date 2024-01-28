@@ -1,0 +1,28 @@
+﻿@model Customer
+
+@{
+    List<Item> AllItems = Model.CustomerItems;
+    int totalItems = AllItems.Count();
+
+    double totalCost = 0;
+    double highestCost = 0;
+    Item highestItem = null;
+    foreach (var item in AllItems)
+    {
+        totalCost += item.ItemPrice;
+        var itemCost = item.ItemPrice;
+        if (itemCost > highestCost)
+        {
+            highestCost = itemCost;
+            highestItem = item;
+        }
+    }
+
+}
+
+
+
+<p>
+    Dear @Model.CustomerFirstName @Model.CustomerLastName  Your most expensive item is @highestItem.ItemName at a cost of $@highestItem.ItemPrice. You bought @totalItems items. The total cost of the items are $@totalCost.ToString("F2").
+    The items will be shipped to @Model.CustomerAddress.
+</p>
